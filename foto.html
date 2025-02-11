@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Romina e Vincenzo</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Link a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
+</head>
+
+<body>
+    <img src="/images/sfondoresized.jpg" alt=""
+    style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;">
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="regalo.html">Regalo</a>
+        <a href="cerimonia.html">Cerimonia</a>
+        <a href="location.html">Location</a>
+        <a href="foto.html">Foto</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776</button>
+    </div>
+
+    <p
+        style="text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; margin-left: 10%; margin-right: 10%; margin-top: 15vh; font-size: clamp(16px, 8vw, 70px); color: #7e915a; font-family: 'Great Vibes', sans-serif;">
+        I momenti più belli del nostro giorno speciale sono quelli che vivremo insieme a voi. Ci piacerebbe che
+        condivideste con noi i vostri ricordi. Abbiamo creato uno spazio dedicato su Google Drive. Potrete caricare le
+        vostre foto utilizzando queste credenziali:</p>
+
+    <button type="button" style="color: #7e915a; border: none; background: transparent;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; 
+    font-size: clamp(10px, 3vw, 100px); /* Stessa grandezza dell'IBAN */
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    gap: clamp(5px, 1vw, 20px);
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;" data-bs-toggle="tooltip" title="Copia username"
+        onclick="copyToClipboard('lallallero@gmail.com')">
+        <img src="/images/copy.svg" alt="Copia"
+            style="width: clamp(12px, 4vw, 200px); height: clamp(12px, 4vw, 200px); object-fit: contain;">
+        Username: lallallero@gmail.com
+    </button>
+
+    <button type="button" style="color: #7e915a; border: none; background: transparent;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; 
+    font-size: clamp(10px, 3vw, 100px); /* Stessa grandezza dell'IBAN */
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    gap: clamp(5px, 1vw, 20px);
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;" data-bs-toggle="tooltip" title="Copia password" onclick="copyToClipboard('123stella')">
+        <img src="/images/copy.svg" alt="Copia"
+            style="width: clamp(12px, 4vw, 200px); height: clamp(12px, 4vw, 200px); object-fit: contain;">
+        Password: 123stella
+    </button>
+
+    <div style="display: flex; align-items: center; justify-content: center; padding-top: 2%; padding-bottom: 4%;">
+        <button type="button"
+            style="background-color: #7e915a; color: white; border: none;
+            width: clamp(12px, 35vw, 900px); /* 1/6 della larghezza dello schermo */
+            height: clamp(12px, 8vw, 900px); /* Altezza relativa allo schermo */
+            font-size: clamp(10px, 4vw, 100px);; /* Testo responsivo */
+            border-radius: 1rem; /* Angoli arrotondati */
+            cursor: pointer;"
+            onclick="window.open('https://drive.google.com', '_blank')">
+            Vai all'album
+        </button>
+    </div>
+
+    <!-- Includi il file JavaScript di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
