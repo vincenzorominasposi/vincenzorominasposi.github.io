@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Romina e Vincenzo</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Link a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
+</head>
+
+<body>
+    <img src="/images/sfondoresized.jpg" alt=""
+    style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;">
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="regalo.html">Regalo</a>
+        <a href="cerimonia.html">Cerimonia</a>
+        <a href="location.html">Location</a>
+        <a href="foto.html">Foto</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776</button>
+    </div>
+
+    <div style="text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; display: flex; justify-content: center; align-items: center; margin-top: 15vh;">
+        <p style="font-size: clamp(16px, 9vw, 100px); color: #7e915a; font-family: 'Great Vibes', sans-serif;">
+            Tenuta Cala Muletti</p>
+    </div>
+
+    <img src="/images/location.jpg" alt="Tenuta Cala Muletti" width="80%" style="margin-left: 10%;">
+
+    <div style="margin-top: 4%; margin-left: 18%;">
+        <a href="https://www.google.com/maps/place/Tenuta+Cala+Muletti/@38.0904509,13.0786079,17z/data=!3m1!4b1!4m6!3m5!1s0x1319919ab0431f51:0xcdf002c7f53ab6b5!8m2!3d38.0904509!4d13.0786079!16s%2Fg%2F11nnqvfqzq?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D"  
+           target="_blank" rel="noopener noreferrer">
+            <img src="/images/locationMap.jpg" alt="Mappa" width="80%">
+        </a>
+        <br>
+        <p style="text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; font-size: 2vw;">Clicca per aprire!</p>
+    </div>
+
+    <button type="button" 
+    style="color: #7e915a; border: none; background: transparent;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; 
+    font-size: clamp(10px, 3vw, 100px); /* Stessa grandezza dell'IBAN */
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    gap: clamp(5px, 1vw, 20px);
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;" 
+    data-bs-toggle="tooltip" title="Copia indirizzo"
+        onclick="copyToClipboard('Strada Statale 113 Km 301/9 - Terrasini, 90049 Palermo PA')">
+        <img src="/images/copy.svg" alt="Copia" style="width: clamp(12px, 4vw, 200px); height: clamp(12px, 4vw, 200px); object-fit: contain;">
+        Strada Statale 113 Km 301/9 - Terrasini, 90049 Palermo PA
+    </button>
+
+    <!-- Includi il file JavaScript di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
